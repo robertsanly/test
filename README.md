@@ -21,7 +21,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
     | `last`       | text                | mimi                    | Last Name                     |
-    | `email`      | email               | momo@mimi.com           | email user                    |
+    | `email`      | email (unique)      | momo@mimi.com           | email user                    |
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
   
