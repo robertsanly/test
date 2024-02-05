@@ -28,17 +28,19 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
 
 * Delete User
     
+        method : DELETE
+        http://localhost:3000/user/
+        body : x-www-form-urlencoded
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 17                      | delete user by id             |  
      
-        method : DELETE
-        http://localhost:3000/user/
-        body : x-www-form-urlencoded
   
 * Edit User
-
-    
+  
+        method : PUT
+        http://localhost:3000/user/
+        body : x-www-form-urlencoded
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 14                      | Id user want to edit          |
@@ -48,8 +50,5 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
 
-        method : PUT
-        http://localhost:3000/user/
-        body : x-www-form-urlencoded
 
      
