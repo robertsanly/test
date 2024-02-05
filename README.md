@@ -21,7 +21,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
     | `last`       | text                | mimi                    | Last Name                     |
-    | `email`      | email (unique)      | momo@mimi.com           | email user                    |
+    | `email`      | text  (unique)      | momo@mimi.com           | email user                    |
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
   
@@ -35,7 +35,16 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 17                      | delete user by id             |  
      
-  
+* Delete User by email
+    
+        method : DELETE
+        http://localhost:3000/user/
+        body : x-www-form-urlencoded
+    | key          | Format/type         |  Example Value          | Description                   |
+    | -----------  | ------------------- | ------------------------|------------------------------ |
+    | `email`      | text                | example@example.com     | delete user by email             |  
+     
+ 
 * Edit User
   
         method : PUT
@@ -46,7 +55,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | `id`         | int                 | 14                      | Id user want to edit          |
     | `first`      | text                | momo                    | First Name                    |
     | `last`       | text                | mimi                    | Last Name                     |
-    | `email`      | email               | momo@mimi.com           | email user                    |
+    | `email`      | text                | momo@mimi.com           | email user                    |
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
 
