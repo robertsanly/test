@@ -4,6 +4,7 @@ Assessment_sdt_test robertto Sanly
 <!-- GETTING STARTED -->
 ## Getting Started
 Download and run app.js in the root folder.
+cron program will run every 10 minutes
 * node
   ```sh
   node app.js
@@ -12,6 +13,7 @@ Download and run app.js in the root folder.
 use http://localhost:3001/ or http://ip-address:3001/ as base url
 
 * Create User
+  Body :
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
@@ -25,6 +27,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
         body : x-www-form-urlencoded
 
 * Delete User
+  Body : 
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 17                      | delete user by id             |  
@@ -35,7 +38,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
   
 * Edit User
 
-  
+  Body : 
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 14                      | Id user want to edit          |
