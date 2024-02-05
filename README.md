@@ -13,7 +13,10 @@ cron program will run every 10 minutes
 use http://localhost:3001/ or http://ip-address:3001/ as base url
 
 * Create User
-    -Body :
+   
+        method : POST
+        http://localhost:3000/user/
+        body : x-www-form-urlencoded
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
@@ -22,12 +25,9 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
   
-        method : POST
-        http://localhost:3000/user/
-        body : x-www-form-urlencoded
 
 * Delete User
-   Body : 
+    
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 17                      | delete user by id             |  
@@ -38,7 +38,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
   
 * Edit User
 
-   Body : 
+    
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 14                      | Id user want to edit          |
