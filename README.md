@@ -20,20 +20,21 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
     | `email`      | email               | momo@mimi.com           | email user                    |
     | `dob`        | YYYY-MM-DD          | 2013-02-03              | Date of Birth                 |
     | `timezone`   | +/-HH:SS            | +07:00                  | Offset timezone user          |
-    ``sh
+
+      ```sh
         method : POST
         http://localhost:3000/user/
         body : x-www-form-urlencoded
 
   * Delete User
-    ```sh
-      method : DELETE
-      http://localhost:3000/user/
-      body : x-www-form-urlencoded
   
   | key          | Format/type         |  Example Value          | Description                   |
   | -----------  | ------------------- | ------------------------|------------------------------ |
   | `id`         | int                 | 17                      | delete user by id             |  
+      ```sh
+        method : DELETE
+        http://localhost:3000/user/
+        body : x-www-form-urlencoded
   
   * Edit User 
      ```sh
