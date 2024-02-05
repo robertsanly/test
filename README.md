@@ -13,7 +13,7 @@ cron program will run every 10 minutes
 use http://localhost:3001/ or http://ip-address:3001/ as base url
 
 * Create User
-   Body :
+    Body :
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
