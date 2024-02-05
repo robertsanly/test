@@ -12,7 +12,6 @@ Download and run app.js in the root folder.
 use http://localhost:3001/ or http://ip-address:3001/ as base url
 
 * Create User
-  
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `first`      | text                | momo                    | First Name                    |
@@ -26,7 +25,6 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
         body : x-www-form-urlencoded
 
 * Delete User
-
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
     | `id`         | int                 | 17                      | delete user by id             |  
@@ -36,6 +34,7 @@ use http://localhost:3001/ or http://ip-address:3001/ as base url
         body : x-www-form-urlencoded
   
 * Edit User
+
   
     | key          | Format/type         |  Example Value          | Description                   |
     | -----------  | ------------------- | ------------------------|------------------------------ |
